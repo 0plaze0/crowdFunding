@@ -11,13 +11,11 @@ module.exports = {
       },
     },
   },
-  defaultNetwork: "holesky",
+  defaultNetwork: "sepolia",
   networks: {
-    hardhat: {
-      chainId: 17000,
-    },
-    holesky: {
-      url: "https://rpc.holesky.ethpandaops.io",
+    hardhat: {},
+    sepolia: {
+      url: "https://11155111.rpc.thirdweb.com",
       accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
   },
